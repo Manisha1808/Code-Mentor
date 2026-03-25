@@ -4,7 +4,7 @@ from google.genai import types
 
 app = Flask(__name__)
 
-client = genai.Client(api_key="AIzaSyBJDGSeQRxJcucGXDacTYOtvMcJQKprP8M")
+client = genai.Client(api_key="")
 
 SYSTEM_PROMPT = """
 You are a strict Data Structures and Algorithms instructor.
