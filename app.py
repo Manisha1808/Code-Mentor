@@ -1,10 +1,12 @@
 from flask import Flask, request, jsonify, render_template
 from google import genai
 from google.genai import types
+import os
 
 app = Flask(__name__)
 
-client = genai.Client(api_key="")
+
+client = genai.Client(api_key=os.getenv("GOOGLE_API_KEY"))
 
 SYSTEM_PROMPT = """
 You are a strict Data Structures and Algorithms instructor.
